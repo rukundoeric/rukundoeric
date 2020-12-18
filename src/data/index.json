@@ -1,0 +1,77 @@
+{
+  "personal_info": {
+    "firstName": "Rukundo",
+    "lastName": "Eric",
+    "Nationality": "Rwanda"
+  },
+  "contact_info": {
+    "phone": "+250 781 049 218",
+    "email": "ericrukundo005@gmail.com"
+  },
+  "statements": [
+    {
+      "input": "Rukundoeric.avaibleForHire?",
+      "return": "True"
+    },
+    {
+      "input": "Rukundoeric.yearsOfExperience",
+      "return": 2
+    },
+    {
+      "input": "Rukundoeric.experties",
+      "return": "[\"Web Development\", \"Mobile App Development\", \" API Integration\",\"Remote Working\"]"
+    },
+    {
+      "input": "Rukundoeric.contactInfo",
+      "return": "[\"<a href=\"mailto:ericrukundo005@gmail.com\">ericrukundo005@gmail.com</a>\", \"+250 781 049 218\"]"
+    },
+    {
+      "input": "Rukundoeric.currentLocation",
+      "return": "Kigali, Rwanda"
+    }
+  ],
+  "social_links": [
+    {
+      "icon": "fa fa-linkedin",
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/rukundo-eric/"
+    },
+    {
+      "icon": "fa fa-twitter",
+      "name": "Twitter",
+      "link": "https://twitter.com/rukundoeric005"
+    },
+    {
+      "icon": "fa fa-facebook",
+      "name": "FaceBook",
+      "link": "https://web.facebook.com/gisa.prestein.9/"
+    },
+    {
+      "icon": "fa fa-github",
+      "name": "GitHub",
+      "link": "https://github.com/rukundoeric"
+    }
+  ],
+  "sections_links": [
+    {
+      "name": "Home",
+      "link": "#"
+    },
+    {
+      "name": "About",
+      "link": "#about"
+    },
+    {
+      "name": "Edication",
+      "link": "#edication"
+    },
+    {
+      "name": "Experience",
+      "link": "#experience"
+    },
+    {
+      "name": "Skills",
+      "link": "#skill"
+    }
+  ]
+}

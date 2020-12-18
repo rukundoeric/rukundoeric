@@ -1,0 +1,24 @@
+  .hero-title {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+    font-size: 1.5em;
+    // color: $purple;
+
+    // &:before {
+    //   content: '>\a0';
+    // }
+
+    // @include mobile {
+    //   font-size: 2.3em;
+    // }
+
+    span {
+      background-color: rgba($purple, 0.65);
+      animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+      50% {
+        background-color: transparent;
+      }
+    }
+  }
