@@ -10,11 +10,11 @@
   },
   "statements": [
     {
-      "input": "Rukundoeric.avaibleForHire?",
+      "input": "Rukundoeric.available_for_hire?",
       "return": "True"
     },
     {
-      "input": "Rukundoeric.yearsOfExperience",
+      "input": "Rukundoeric.years_of_experience",
       "return": 2
     },
     {
@@ -22,11 +22,11 @@
       "return": "[\"Web Development\", \"Mobile App Development\", \" API Integration\",\"Remote Working\"]"
     },
     {
-      "input": "Rukundoeric.contactInfo",
+      "input": "Rukundoeric.contact_information",
       "return": "[\"<a href=\"mailto:ericrukundo005@gmail.com\">ericrukundo005@gmail.com</a>\", \"+250 781 049 218\"]"
     },
     {
-      "input": "Rukundoeric.currentLocation",
+      "input": "Rukundoeric.current_location",
       "return": "Kigali, Rwanda"
     }
   ],
