@@ -620,7 +620,7 @@
         border-bottom: none !important; }
   .header-area .header-top_area {
     padding: 12px 0;
-    background: rgba(44, 44, 44, 0.5); }
+    background: rgba(44, 44, 44, 0.301); }
     @media (max-width: 767px) {
       .header-area .header-top_area .social_media_links {
         text-align: center; } }
@@ -666,6 +666,9 @@
     .header_bottom_border {
       padding: 0;
       border-bottom: none; } }
+
+.slider_bg_2 {
+  background-image: url(../imgs/banner5.jpg); }
 
 .slider_area .single_slider {
   height: 100vh;
@@ -939,13 +942,13 @@ h3 {
 .overlay2::before {
   position: absolute;
   content: "";
-  background-color: #2C2C2C;
+  background-color: #0d0f1a;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.6; }
+  opacity: 0.8; }
 
 .overlay_03 {
   position: relative;

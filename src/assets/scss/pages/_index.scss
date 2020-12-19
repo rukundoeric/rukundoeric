@@ -161,13 +161,13 @@ h3{
 .overlay2::before{
 	position: absolute;
 	content: "";
-	background-color: #2C2C2C;
+	background-color: rgb(13, 15, 26);;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .overlay_03{
