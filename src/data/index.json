@@ -174,5 +174,30 @@
       "level": 100
     }
     
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "type": "Full-time",
+      "organization": "SourceDev",
+      "duration": "Oct 2019 - Dec 2020",
+      "description": [
+        "Designed and Implemented a new ORM framework to help our devs team to execute complicated database queries fast and easy."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "type": "Full-time",
+      "organization": "Andela",
+      "duration": "May 2019 - Dec 2019",
+      "description": [
+        "Reviewed, monitored, and repaired any changed code for quality, adherence to standards, and potential performance effects on compatible systems.",
+        "Front-end development with React, Redux, SASS, and APIs integration.",
+        "Designed, managed, and updated web applications for various departments in the organization.",
+        "Established development standards to facilitate high-quality code and leverage the latest innovations in technology.",
+        "Customized systems for the development of software application tools and architecture.",
+        "The team reached a high performance using SCRUM, Continuous Integration, automated tests, and English as the main language." 
+      ]
+    }
   ]
 }

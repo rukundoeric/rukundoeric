@@ -49,6 +49,38 @@ h6 a {
 	color: inherit;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+.exp-p {
+	margin: 0 10px !important;
+	padding: 0 !important;
+}
+
+.with_line {
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    color: $btn_bg;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.with_line:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background:  $btn_bg;
+    top: 9px;
+}
+
 ul {
 	margin: 0px;
 	padding: 0px;

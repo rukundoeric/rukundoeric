@@ -4,6 +4,7 @@ import Slider from '../layouts/slider';
 import About from '../layouts/about';
 import Experties from '../layouts/Services';
 import Skills from  '../layouts/skills';
+import Experience from '../layouts/experience';
 import { $ } from '../../assets/js/plugins';
 // import { $ } from 'react-jquery-plugin';
 
@@ -37,6 +38,7 @@ export default function Home() {
       <About />
       <Experties />
       <Skills />
+      <Experience />
     </div>
   )
 }
