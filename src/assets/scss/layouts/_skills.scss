@@ -1,0 +1,28 @@
+.section-skills {
+  .section-skills {
+    padding-bottom: 120px;
+  }
+
+  .skill+.skill {
+    margin-top: 50px;
+  }
+
+  .skill h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 15px;
+  }
+
+  .progress {
+    height: 8px;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: $color-accent-1-a;
+    box-shadow: none;
+  }
+
+  .progress-bar {
+    background-color: $color-accent-1;
+  }
+}

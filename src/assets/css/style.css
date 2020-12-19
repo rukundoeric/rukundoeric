@@ -884,6 +884,9 @@
       font-style: normal;
       margin-left: 0 !important;
       color: white; }
+    .service-part .services:hover {
+      transition: all .3s ease-in-out;
+      box-shadow: 0px 0px 20px #28AE60; }
     .service-part .services.active {
       background: #28AE60; }
       .service-part .services.active .icon span {
@@ -916,6 +919,24 @@
         color: white; }
     .service-part .services-wrap .media-body {
       width: calc(100% - 80px); }
+
+.section-skills .section-skills {
+  padding-bottom: 120px; }
+.section-skills .skill + .skill {
+  margin-top: 50px; }
+.section-skills .skill h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 15px; }
+.section-skills .progress {
+  height: 8px;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #daf6e6;
+  box-shadow: none; }
+.section-skills .progress-bar {
+  background-color: #28AE60; }
 
 body {
   font-family: "Poppins", sans-serif;

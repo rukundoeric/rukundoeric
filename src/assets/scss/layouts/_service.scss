@@ -67,7 +67,7 @@
       @include transition(0.3s);
       h3 {
         font-size: 18px;
-        // font-family: $roboto-medium;
+        // font-family: "Poppins", sans-serif;
         font-weight: 700;
         @include transition(0.3s);
       }
@@ -80,30 +80,33 @@
     .ServiceIcon{
        @include flaticon_icon_m(45px, $color-white);
     }
-    // &:hover {
-    //   background: $color-accent-1;
-    //   .ServiceIcon {
-    //     background: lighten($color-accent-1, 30%);
-    //     @include flaticon_icon_m(45px, $color-accent-1);
-    //     &:after {
-    //       border-color: transparent transparent lighten($color-accent-1, 30%)
-    //         transparent;
-    //     }
-    //     &:before {
-    //       border-color: lighten($color-accent-1, 30%) transparent transparent
-    //         transparent;
-    //     }
-    //   }
-    //   span {
-    //     color: $color-accent-1 !important;
-    //   }
-    //   .media-body {
-    //     color: rgba(255, 255, 255, 0.8);
-    //     h3 {
-    //       color: $color-white;
-    //     }
-    //   }
-    // }
+    &:hover {
+      transition: all .3s ease-in-out;
+      box-shadow: 0px 0px 20px $color-accent-1;
+      // border: 1px solid $color-accent-1;
+      // background: $color-accent-1;
+      // .ServiceIcon {
+      //   background: lighten($color-accent-1, 30%);
+      //   @include flaticon_icon_m(45px, $color-accent-1);
+      //   &:after {
+      //     border-color: transparent transparent lighten($color-accent-1, 30%)
+      //       transparent;
+      //   }
+      //   &:before {
+      //     border-color: lighten($color-accent-1, 30%) transparent transparent
+      //       transparent;
+      //   }
+      // }
+      // span {
+      //   color: $color-accent-1 !important;
+      // }
+      // .media-body {
+      //   color: rgba(255, 255, 255, 0.8);
+      //   h3 {
+      //     color: $color-white;
+      //   }
+      // }
+    }
     &.active {
       background: $color-accent-1;
       .icon {

@@ -3,6 +3,7 @@ import Header from '../layouts/header';
 import Slider from '../layouts/slider';
 import About from '../layouts/about';
 import Experties from '../layouts/Services';
+import Skills from  '../layouts/skills';
 import { $ } from '../../assets/js/plugins';
 // import { $ } from 'react-jquery-plugin';
 
@@ -35,6 +36,7 @@ export default function Home() {
       <Slider />
       <About />
       <Experties />
+      <Skills />
     </div>
   )
 }

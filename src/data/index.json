@@ -115,5 +115,64 @@
         }
       }
     ]
-  }
+  },
+  "skills": [
+    {
+      "name": "HTML / CSS",
+      "level": 100
+    },
+    {
+      "name": "Bootstrap",
+      "level": 100
+    },
+    {
+      "name": "REACT / REDUX",
+      "level": 95
+    },
+    {
+      "name": "MOBILE / REACT NATIVE",
+      "level": 95
+    },
+    {
+      "name": "JAVASCRIPT / JQUERY",
+      "level": 92
+    },
+    {
+      "name": "NODE.JS / EXPRESS",
+      "level": 85
+    },
+    {
+      "name": "RUBY / RUBY ON RAILS",
+      "level": 96
+    },
+    {
+      "name": "MySQL",
+      "level": 70
+    },
+    {
+      "name": "PostgreSQL",
+      "level": 80
+    },
+    {
+      "name": "MongoDB",
+      "level": 75
+    },
+    {
+      "name": "GIT",
+      "level": 98
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "level": 60
+    },
+    {
+      "name": "Docker",
+      "level": 92
+    },
+    {
+      "name": "Agile software development",
+      "level": 100
+    }
+    
+  ]
 }
