@@ -138,3 +138,16 @@ transition: $args;
   @content;
 }
 }
+
+@mixin flaticon_icon_m($size, $color) {
+  [class^="flaticon-"]:before,
+  [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after,
+  [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: $size;
+    font-style: normal;
+    margin-left: 0 !important;
+    color: $color;
+  }
+}

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Header from '../layouts/header';
 import Slider from '../layouts/slider';
+import About from '../layouts/about';
+import Experties from '../layouts/Services';
 import { $ } from '../../assets/js/plugins';
 // import { $ } from 'react-jquery-plugin';
 
@@ -8,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
-      if (scroll < 400) {
+      if (scroll < 200) {
         $("#sticky-header").removeClass("sticky");
         $("#back-top").fadeIn(500);
       } else {
@@ -31,6 +33,8 @@ export default function Home() {
     <div>
       <Header />
       <Slider />
+      <About />
+      <Experties />
     </div>
   )
 }

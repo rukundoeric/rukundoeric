@@ -9,7 +9,7 @@ export default function Slider() {
         <div className="single_slider  d-flex align-items-center slider_bg_2 overlay2">
           <div className="container">
             <div className="row">
-              <div className="col-xl-6">
+              <div className="col-xl-6 col-lg-6">
                 <div className="slider_text ">
                   <span className="sd_text">Hi! There</span>
                   <h3>I'M Rukundo Eric</h3>
@@ -30,7 +30,7 @@ export default function Slider() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 code-area d-flex justify-content-center align-items-center">
+              <div className="col-xl-6 col-lg-6 code-area d-none d-lg-flex justify-content-center align-items-center">
                 <div className="content-d d-flex mt-auto justify-content-center align-items-center">
                   <div className="icon">
                     <SIcon icon="fa fa-chevron-right" styleClass="icon6" />

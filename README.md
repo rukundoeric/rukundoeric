@@ -34,5 +34,3 @@ Hi, I'm [Rukundo Eric](https://github.com/rukundoeric), a Full-Stack Web Develop
 </a>
 <br />
 <br />
-
-

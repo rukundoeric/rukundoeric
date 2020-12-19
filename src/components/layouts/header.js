@@ -2,7 +2,7 @@ import React from "react";
 import {
   social_links as s_link,
   contact_info,
-  sections_links
+  sections_links,
 } from "../../data/index.json";
 
 export default function header() {
@@ -73,11 +73,9 @@ export default function header() {
                 </div>
               </div>
             </div>
-            {/* <div className="header_bottom_border">
-            </div> */}
-              {/* <div className="col-12">
-                  <div className="mobile_menu d-block d-lg-none"></div>
-                </div> */}
+            <div className="col-12">
+              <div className="mobile_menu d-block d-lg-none"></div>
+            </div>
           </div>
         </div>
       </div>

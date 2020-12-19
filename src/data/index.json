@@ -73,5 +73,47 @@
       "name": "Skills",
       "link": "#skill"
     }
-  ]
+  ],
+  "services": {
+    "sectionName": "Experties",
+    "subtitle": " I can help you bring your product to life - whether it's a Minimum Viable Product(MVP), UX/UI Services or API integration.",
+    "items": [
+      {
+        "icon": "flaticon-coding",
+        "iconStyle": "ServiceIcon",
+        "title": "Front-End",
+        "description": "As a javascript developer, I have experience in HTML5 and CSS3 techniques working with jQuery or more advanced javascript MVC frameworks such as React.",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
+      },
+      {
+        "icon": "flaticon-api",
+        "iconStyle": "ServiceIcon",
+        "title": "Back-End",
+        "description": "Utilising backend frameworks such as rails or nodejs, I've written services supporting thousands of users, including REST APIs, e-learning applications and more.",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
+      },
+      {
+        "icon": "flaticon-remote",
+        "iconStyle": "ServiceIcon",
+        "title": "Remote Working",
+        "description": "As a full-stack software developer, I have 2+ years of experience in working remotely",
+        "animation": {
+          "name": "zoom-in-up",
+          "easing": "ease-in-out",
+          "delay": "300",
+          "duration": "1000"
+        }
+      }
+    ]
+  }
 }

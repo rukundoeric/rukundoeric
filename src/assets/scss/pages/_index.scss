@@ -3,7 +3,7 @@ body {
   font-family: $font1;
 	font-weight: normal;
   font-style: normal;
-  background-color: rgb(13, 15, 26);
+  background-color: white;
     
 }
 
@@ -309,4 +309,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', end
       animation: 1.6s ease infinite wheel-left-right !important;
     }
   }
+}
+
+.section_header {
+	font-family: $font_d_1;
+	// color: ;
+}
+
+.line-x {
+	background-color: yellow;
+	width: 50px;
+	height: 5px;
+	
+	&::before {
+		content: '';
+		width: 20px;
+		height: 5px;
+		background-color: red;
+		// margin-right: 40px;
+	}
+
+	&::after {
+		content: '';
+		width: 50px;
+		background-color: green;
+		margin-left: 10px;
+	}
 }
