@@ -6,6 +6,7 @@ import Expertise from '../layouts/Services';
 import Skills from  '../layouts/skills';
 import Experience from '../layouts/experience';
 import Projects from '../layouts/projects';
+import Recommendations from '../layouts/Testmony';
 import { $ } from '../../assets/js/plugins';
 // import { $ } from 'react-jquery-plugin';
 
@@ -43,6 +44,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
+      <Recommendations />
     </div>
   );
 }

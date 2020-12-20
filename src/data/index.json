@@ -177,7 +177,6 @@
       "name": "Agile software development",
       "level": 100
     }
-    
   ],
   "experience": [
     {
@@ -200,10 +199,10 @@
         "Designed, managed, and updated web applications for various departments in the organization.",
         "Established development standards to facilitate high-quality code and leverage the latest innovations in technology.",
         "Customized systems for the development of software application tools and architecture.",
-        "The team reached a high performance using SCRUM, Continuous Integration, automated tests, and English as the main language." 
+        "The team reached a high performance using SCRUM, Continuous Integration, automated tests, and English as the main language."
       ]
     },
-     {
+    {
       "role": "Freelancer",
       "type": "Part-time",
       "organization": "SourceDev",
@@ -220,42 +219,122 @@
       {
         "name": "All",
         "data_filter": "*",
-        "link":"#",
+        "link": "#",
         "className": "active"
       },
       {
         "name": "Business",
         "data_filter": ".business",
-        "link":"#"
+        "link": "#"
       },
       {
         "name": "Social",
         "data_filter": ".social",
-        "link":"#"
+        "link": "#"
       },
       {
         "name": "Templates",
-        "data_filter": ".templates",
-        "link":"#"
+        "data_filter": ".template",
+        "link": "#"
       }
     ],
     "projects": [
       {
-        "name": "Mapping",
-        "type": "business templates",
-        "description": "Mockups in seconds",
-        "image_url": "https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg",
-        "live_demo_url": "",
-        "source_code_url": ""
+        "name": "Source Dev",
+        "type": "business",
+        "description": "A Website for SourceDev Organization",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491041/Portfolio/projects/source_dev_ahg2l5.jpg",
+        "live_demo_url": "https://sourcedevfrontend.herokuapp.com/",
+        "source_code_url": "https://github.com/Source-Developers/sourcedev-frontend"
       },
       {
-        "name": "Mapping",
-        "type": "templates",
-        "description": "Mockups in seconds",
-        "image_url": "https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg",
-        "live_demo_url": "",
-        "source_code_url": ""
+        "name": "Book-U",
+        "type": "business social",
+        "description": "Simple Socia Media That help Users to Share Ideas",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491069/Portfolio/projects/book_u_anspcg.jpg",
+        "live_demo_url": "https://book-u-2020.herokuapp.com/",
+        "source_code_url": "https://github.com/rukundoeric/book-u"
+      },
+      {
+        "name": "Members-Only",
+        "type": "social",
+        "description": "Simple Socia Media That help Users to Share Ideas",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491066/Portfolio/projects/members_only_o3rxr8.jpg",
+        "live_demo_url": "https://members-only-2020.herokuapp.com/",
+        "source_code_url": "https://github.com/rukundoeric/members-only"
+      },
+      {
+        "name": "The Next Web",
+        "type": "template",
+        "description": "A structural clone of the Next Web home page.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491045/Portfolio/projects/tnw_pz0yam.jpg",
+        "live_demo_url": "https://rukundoeric.github.io/Building-with-Responsive-Design/index",
+        "source_code_url": "https://github.com/rukundoeric/Building-with-Responsive-Design"
+      },
+      {
+        "name": "GUMA GUMA",
+        "type": "business",
+        "description": "This is an online website for buying tickets for a flagship music competition concert called Primus Guma Guma Superstar.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491130/Portfolio/projects/conf_page_ox1qo8.png",
+        "live_demo_url": "https://rukundoeric.github.io/Conference-page/",
+        "source_code_url": "https://github.com/rukundoeric/Conference-page"
+      },
+      {
+        "name": "The Newsweek",
+        "type": "template",
+        "description": "A structural clone of Newsweek home page.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491036/Portfolio/projects/newsweek_khdnd2.jpg",
+        "live_demo_url": "http://binyamhailemeskel.me/Newsweek-Clone/index",
+        "source_code_url": "https://github.com/bini-i/Newsweek-Clone"
+      },
+      {
+        "name": "P-EVENTS",
+        "type": "social business",
+        "description": "A Social Web App that help users to manage Events",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491038/Portfolio/projects/private_events_tqbavj.jpg",
+        "live_demo_url": "https://private-events-2020.herokuapp.com/",
+        "source_code_url": "https://github.com/rukundoeric/private-events"
+      },
+      {
+        "name": "The New York Times",
+        "type": "template",
+        "description": "A structural clone of the New York Times page.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491036/Portfolio/projects/newyorktimes_ub9nkd.jpg",
+        "live_demo_url": "https://gitcdn.xyz/cdn/rukundoeric/Positioning-and-Floating-Elements/5d71b895deed0c31e94517a83876509b7bd976f0/index.html",
+        "source_code_url": "https://github.com/rukundoeric/Positioning-and-Floating-Elements"
       }
     ]
-  }
+  },
+  "recommendations": [
+    {
+      "icon": "fa fa-quote-left",
+      "iconStyle": "testimony-icon",
+      "message": "I’ve had the pleasure of knowing Eric, He wasn't just a teammate but also a great friend during the Software development journey at Microverse Remote pair-programming session. I was so impressed by his style of learning, adapting knowledge quickly, Researching skills, and share the knowledge with others. He was very professional and always ready for new responsibilities which is something desired by any professional. He will be a great asset and I recommend Eric.",
+      "author": {
+        "avata": "https://avatars0.githubusercontent.com/u/24191094?s=460&u=3ff3f72b1d024776af5a0a60534f5a5f98e741b1&v=4",
+        "name": "Divyesh Patel",
+        "position": "Software Engineer"
+      }
+    },
+    {
+      "icon": "fa fa-quote-left",
+      "iconStyle": "testimony-icon",
+      "message": "Eric has consistently been a great contributor to our team. In addition to general charisma and positivity, he's not afraid to speak up and do what needs to be done to achieve his goals. Issues and blockers he sets his mind to are sure to be solved quickly and efficiently! Self-starter and go-getter all around. Never denied taking an extra mile for getting the result. Quick problem-solver with strong programming skills, he would be definitely a great asset for any development team.",
+      "author": {
+        "avata": "https://pbs.twimg.com/profile_images/1287639211881967616/In0Z4NP2_400x400.jpg",
+        "name": "Igors Oleinikovs",
+        "position": "Software Engineer"
+      }
+    },
+    {
+      "icon": "fa fa-quote-left",
+      "iconStyle": "testimony-icon",
+      "message": "I have had the honor of working with Eric several times on different projects, And I can say without a doubt that he is one of the very best engineers out there. He is a very flexible and practical person and holds a deep understanding of the different technologies that surround him. He is a focused person and very strong-willed. He is an excellent engineer, mentor, teacher, and friend.",
+      "author": {
+        "avata": "https://media-exp1.licdn.com/dms/image/C4D03AQHWY5ykgFtmYA/profile-displayphoto-shrink_100_100/0/1589496219955?e=1614211200&v=beta&t=jsH55RKP0Tn4G7DKQ-jJZrUJN0CRUWVu-MjGzFtYrVg",
+        "name": "Kwizera Aime Elvis",
+        "position": "Software Engineer"
+      }
+    }
+  ]
 }

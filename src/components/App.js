@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import home from "./pages/home";
 import "../assets/css/bootstrap.min.css";
-// import "../assets/css/owl.carousel.min.css";
 import "../assets/css/magnific-popup.css";
 import "../assets/css/font-awesome.min.css";
 import "../assets/css/themify-icons.css";

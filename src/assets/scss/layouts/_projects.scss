@@ -126,6 +126,11 @@
     float: left;
   }
 
+  .portfolio_item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(30%);
+  }
+
   .portfolio .categories-grid .categories ul li a {
     padding: 0 10px;
     -webkit-transition: all .2s ease-in-out .2s;

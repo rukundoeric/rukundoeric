@@ -5,7 +5,7 @@ import SIcon from "../shared/SIcon";
 export default function Slider() {
   return (
     <div className="slider_area">
-      <div className="slider_active owl-carousel">
+      <div className="slider_active">
         <div className="single_slider  d-flex align-items-center slider_bg_2 overlay2">
           <div className="container">
             <div className="row">
