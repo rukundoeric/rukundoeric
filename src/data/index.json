@@ -62,16 +62,20 @@
       "link": "#about"
     },
     {
-      "name": "Edication",
-      "link": "#edication"
-    },
-    {
-      "name": "Experience",
-      "link": "#experience"
+      "name": "Expertise",
+      "link": "#expertise"
     },
     {
       "name": "Skills",
-      "link": "#skill"
+      "link": "#my_skills"
+    },
+    {
+      "name": "Experience",
+      "link": "#my_experience"
+    },
+    {
+      "name": "Projects",
+      "link": "#my_projects"
     }
   ],
   "services": {
