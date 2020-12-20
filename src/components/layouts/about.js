@@ -3,12 +3,12 @@ import line from "../../assets/imgs/lines.svg";
 
 export default function About() {
   return (
-    <section id="about" class="section-about text-center">
-      <div class="container about_container">
-        <div class="row my-5">
-          <div class="col-md-12 col-md-offset-3 px-5">
+    <section id="about" className="section-about text-center">
+      <div className="container about_container">
+        <div className="row my-5">
+          <div className="col-md-12 col-md-offset-3 px-5">
             <h2 className="section_header">About Me</h2>
-            <img src={line} class="img-lines" alt="lines"></img>
+            <img src={line} className="img-lines" alt="lines"></img>
             <p className="px-lg-5 mt-4">
               Hi, I'm Eric, I’m an organized, detail-oriented, self-motivated,
               dedicated professional, and experienced developer with a passion
@@ -23,7 +23,7 @@ export default function About() {
             </p>
             <a
               href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
-              class="boxed-btn3 mt-5"
+              className="boxed-btn3 mt-5"
               target="_blank"
               download
             >

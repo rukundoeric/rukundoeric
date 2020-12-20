@@ -9,7 +9,7 @@ export default function header() {
   return (
     <header>
       <div className="header-area ">
-        <div className="header-top_area d-none d-lg-block">
+        <div id="sticky-header-top" className="header-top_area d-none d-lg-block">
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-md-6 ">

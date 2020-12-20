@@ -5,26 +5,33 @@ import { experience } from "../../data/index.json"
 export default function Experience() {
   return (
     <section className="experience_container py-5" id="experience">
-      <div class="section">
-        <div class="container">
-          <div class="text-center">
+      <div className="section">
+        <div className="container">
+          <div className="text-center">
             <h2 className="section_header">My Experience</h2>
-            <img src={line} class="img-lines" alt="lines"></img>
+            <img src={line} className="img-lines" alt="lines"></img>
           </div>
-          <div class="col-md-12 mt-5">
-            <ul class="timeline">
-              {experience.map((exp) => (
-                <li class="timeline-event" data-aos="fade-up">
-                  <label class="timeline-event-icon"></label>
-                  <div class="timeline-event-copy">
-                    <p class="timeline-event-thumbnail">{exp.duration}</p>
+          <div className="col-md-12 mt-5">
+            <ul className="timeline">
+              {experience.map((exp, index) => (
+                <li
+                  key={`key_${index}`}
+                  className="timeline-event"
+                  data-aos="fade-up"
+                >
+                  <label className="timeline-event-icon"></label>
+                  <div className="timeline-event-copy">
+                    <p className="timeline-event-thumbnail">{exp.duration}</p>
                     <h3>{exp.role}</h3>
                     <h4 className="with_line">
                       {exp.organization + " - " + exp.type}
                     </h4>
-                    {exp.description.map((a) => (
-                      <div className="d-flex my-3 exp-desc">
-                        <i class="fa fa-check mt-1"></i>
+                    {exp.description.map((a, index) => (
+                      <div
+                        key={`key_${index}`}
+                        className="d-flex my-3 exp-desc"
+                      >
+                        <i className="fa fa-check mt-1"></i>
                         <p className="exp-p ml-2">{a}</p>
                       </div>
                     ))}

@@ -24,20 +24,20 @@ export default function Skills() {
   }, []);
 
   return (
-    <section class="site-section section-skills my-5 py-5">
-      <div class="container">
-        <div class="text-center">
+    <section className="site-section section-skills my-5 py-5">
+      <div className="container">
+        <div className="text-center">
           <h2 className="section_header">My Skills</h2>
-          <img src={line} class="img-lines" alt="lines"></img>
+          <img src={line} className="img-lines" alt="lines"></img>
         </div>
-        <div class="row mt-5 d-flex justify-content-center">
-          {skills.map((skill) => (
-            <div class="col-md-3 mt-3">
-              <div class="skill">
+        <div className="row mt-5 d-flex justify-content-center">
+          {skills.map((skill, index) => (
+            <div key={`key_${index}`} className="col-md-3 mt-3">
+              <div className="skill">
                 <h4>{skill.name}</h4>
-                <div class="progress">
+                <div className="progress">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     data-transitiongoal={skill.level}
                   ></div>

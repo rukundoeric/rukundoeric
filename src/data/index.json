@@ -18,7 +18,7 @@
       "return": 2
     },
     {
-      "input": "Rukundoeric.experties",
+      "input": "Rukundoeric.expertise",
       "return": "[\"Web Development\", \"Mobile App Development\", \" API Integration\",\"Remote Working\"]"
     },
     {
@@ -75,7 +75,7 @@
     }
   ],
   "services": {
-    "sectionName": "Experties",
+    "sectionName": "Expertise",
     "subtitle": " I can help you bring your product to life - whether it's a Minimum Viable Product(MVP), UX/UI Services or API integration.",
     "items": [
       {
@@ -198,6 +198,60 @@
         "Customized systems for the development of software application tools and architecture.",
         "The team reached a high performance using SCRUM, Continuous Integration, automated tests, and English as the main language." 
       ]
+    },
+     {
+      "role": "Freelancer",
+      "type": "Part-time",
+      "organization": "SourceDev",
+      "duration": "Dec 2017 - Present",
+      "description": [
+        "Implemented Software products for clients",
+        "I've written services supporting thousands of users, including REST APIs, e-learning applications and more."
+      ]
     }
-  ]
+  ],
+  "projects_section": {
+    "title": "My Projects",
+    "categories": [
+      {
+        "name": "All",
+        "data_filter": "*",
+        "link":"#",
+        "className": "active"
+      },
+      {
+        "name": "Business",
+        "data_filter": ".business",
+        "link":"#"
+      },
+      {
+        "name": "Social",
+        "data_filter": ".social",
+        "link":"#"
+      },
+      {
+        "name": "Templates",
+        "data_filter": ".templates",
+        "link":"#"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Mapping",
+        "type": "business templates",
+        "description": "Mockups in seconds",
+        "image_url": "https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg",
+        "live_demo_url": "",
+        "source_code_url": ""
+      },
+      {
+        "name": "Mapping",
+        "type": "templates",
+        "description": "Mockups in seconds",
+        "image_url": "https://www.adobe.com/content/dam/cc/us/en/products/creativecloud/stock/stock-riverflow1-720x522.jpg.img.jpg",
+        "live_demo_url": "",
+        "source_code_url": ""
+      }
+    ]
+  }
 }

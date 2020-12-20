@@ -14,7 +14,7 @@ export default class Services extends Component {
           <div className="row justify-content-center">
             <div className="col-md-12 heading-section text-center ftco-animate mb-5">
               <h2 className="section_header">{services.sectionName}</h2>
-              <img src={line} class="img-lines" alt="lines"></img>
+              <img src={line} className="img-lines" alt="lines"></img>
               <p className="mt-3">{services.subtitle}</p>
             </div>
           </div>
