@@ -5,7 +5,7 @@
 /* eslint-disable react/jsx-filename-extension */
 
 import React, { Component } from "react";
-import { recommendations } from "../../data/index.json";
+import { recommendation } from "../../data/index.json";
 import TestmonyItem from "../items/Testmony";
 import line from "../../assets/imgs/lines.svg";
 
@@ -43,11 +43,11 @@ export default class Testmony extends Component {
 
   render() {
     return (
-      <section className="testimony-section py-5" id="experience">
+      <section id="recommendations-section" className="testimony-section py-5">
         <div className="section" id="projects">
           <div className="container">
             <div className="text-center">
-              <h2 className="section_header">Recommendations</h2>
+              <h2 className="section_header">{recommendation.title}</h2>
               <img src={line} className="img-lines" alt="lines"></img>
             </div>
             <div className="main-container portfolio-inner clearfix">
@@ -55,7 +55,7 @@ export default class Testmony extends Component {
                 <div className="row">
                   <div className="col-md-12">
                     <div className="carousel-testimony owl-carousel">
-                      {recommendations.map((item, i) => (
+                      {recommendation.recommendations.map((item, i) => (
                         <TestmonyItem
                           key={`key_${i}`}
                           icon={item.icon}

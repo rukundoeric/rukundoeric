@@ -11,7 +11,6 @@ class Typewriter extends React.Component {
   clicketyClack(text, minTypeSpeed, maxTypeSpeed, initDelay) {
     let str = "";
     let typeSpeed = 0;
-    const self = this;
 
     text.split("").forEach((c) => {
       typeSpeed += Math.random() * (maxTypeSpeed - minTypeSpeed) + minTypeSpeed;

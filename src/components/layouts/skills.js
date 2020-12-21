@@ -24,14 +24,14 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="site-section section-skills my-5 py-5">
+    <section id="skills-section" className="site-section section-skills my-5 py-5">
       <div className="container">
         <div className="text-center">
-          <h2 className="section_header">My Skills</h2>
+          <h2 className="section_header">{skills.name}</h2>
           <img src={line} className="img-lines" alt="lines"></img>
         </div>
         <div className="row mt-5 d-flex justify-content-center">
-          {skills.map((skill, index) => (
+          {skills.skills.map((skill, index) => (
             <div key={`key_${index}`} className="col-md-3 mt-3">
               <div className="skill">
                 <h4>{skill.name}</h4>

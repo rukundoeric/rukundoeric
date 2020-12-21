@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../layouts/header';
 import Slider from '../layouts/slider';
 import About from '../layouts/about';
@@ -8,9 +8,11 @@ import Experience from '../layouts/experience';
 import Projects from '../layouts/projects';
 import Recommendations from '../layouts/Testmony';
 import { $ } from '../../assets/js/plugins';
-// import { $ } from 'react-jquery-plugin';
 
 export default function Home() {
+
+  const [activeMenu, setActiveMenu] = useState('Home');
+
   useEffect(() => {
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
@@ -34,17 +36,56 @@ export default function Home() {
       });
     }
 
-  }, [])
+    window.$(window).scroll(() => {
+      const home = window.$(window).scrollTop() + 1;
+      const about = window.$("#about-section").offset().top - 200;
+      const expertise = window.$("#expertise-section").offset().top - 200;
+      const skills = window.$("#skills-section").offset().top - 200;
+      const experience = window.$("#experience-section").offset().top - 200;
+      const projects = window.$("#projects-section").offset().top - 200;
+      const recommendations =
+        window.$("#recommendations-section").offset().top - 200;
+
+      if (home < about) {
+        setActiveMenu("Home");
+      } else if (home >= about && home < expertise) {
+        setActiveMenu("About");
+      } else if (home >= expertise && home < skills) {
+        setActiveMenu("Expertise");
+      } else if (home >= skills && home < experience) {
+        setActiveMenu("Skills");
+      } else if (home >= experience && home < projects) {
+        setActiveMenu("Experience");
+      } else if (home >= projects && home < recommendations) {
+        setActiveMenu("Projects");
+      } else if (home >= recommendations) {
+        setActiveMenu("Recommendations");
+      }
+    });
+
+  }, []);
+   
+  const goTo = (e, d) => {
+    e.preventDefault();
+    window.$("html,body").animate(
+      {
+        scrollTop: window.$(d).offset().top - 150,
+      },
+      3000,
+      "easeInOutExpo"
+    );
+  };
+
   return (
     <div>
-      <Header />
+      <Header goto={goTo} activeMenu={activeMenu} />
       <Slider />
       <About />
       <Expertise />
       <Skills />
       <Experience />
       <Projects />
-      <Recommendations />
+      <Recommendations />   
     </div>
   );
 }

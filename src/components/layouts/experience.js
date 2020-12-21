@@ -4,16 +4,16 @@ import { experience } from "../../data/index.json"
 
 export default function Experience() {
   return (
-    <section className="experience_container py-5" id="experience">
+    <section id="experience-section" className="experience_container py-5">
       <div className="section">
         <div className="container">
           <div className="text-center">
-            <h2 className="section_header">My Experience</h2>
+            <h2 className="section_header">{experience.title}</h2>
             <img src={line} className="img-lines" alt="lines"></img>
           </div>
           <div className="col-md-12 mt-5">
             <ul className="timeline">
-              {experience.map((exp, index) => (
+              {experience.experiences.map((exp, index) => (
                 <li
                   key={`key_${index}`}
                   className="timeline-event"

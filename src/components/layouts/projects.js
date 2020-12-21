@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import line from "../../assets/imgs/lines.svg";
-import image from "../../assets/imgs/banner3.jpg";
 import { $ } from "../../assets/js/plugins";
-import { projects_section } from "../../data/index.json";
+import { projects } from "../../data/index.json";
 
 export default function Projects() {
   
@@ -31,11 +30,11 @@ export default function Projects() {
   }, [])
 
   return (
-    <section className="projects_container py-5" id="experience">
+    <section className="projects_container py-5" id="projects-section">
       <div className="section" id="projects">
         <div className="container">
           <div className="text-center">
-            <h2 className="section_header">{projects_section.title}</h2>
+            <h2 className="section_header">{projects.title}</h2>
             <img src={line} className="img-lines" alt="lines"></img>
           </div>
           <div className="main-container portfolio-inner clearfix">
@@ -44,7 +43,7 @@ export default function Projects() {
                 <div className="categories-grid wow fadeInLeft">
                   <nav className="categories">
                     <ul className="portfolio_filter">
-                      {projects_section.categories.map(
+                      {projects.categories.map(
                         ({ name, data_filter, link, className }, index) => (
                           <li key={`key_${index}`}>
                             <a
@@ -65,7 +64,7 @@ export default function Projects() {
                   className="no-padding portfolio_container clearfix"
                   data-aos="fade-up"
                 >
-                  {projects_section.projects.map(
+                  {projects.projects.map(
                     (
                       {
                         name,

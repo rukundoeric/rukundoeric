@@ -156,7 +156,7 @@
   0% {
     width: 0px; }
   100% {
-    width: 20px; } }
+    width: 35px; } }
 .boxed-btn {
   background: #fff;
   color: #131313;
@@ -1117,7 +1117,7 @@
     padding: 0.25em 1em 0.2em 1em; }
 
 .projects_container #projects {
-  padding: 100px 0; }
+  padding: 10px 0; }
 .projects_container .img-responsive {
   height: 400px;
   object-fit: cover; }
@@ -1380,10 +1380,12 @@ a,
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  cursor: pointer; }
 
 a:focus,
-.button:focus, button:focus {
+.button:focus,
+button:focus {
   text-decoration: none;
   outline: none; }
 
@@ -1403,7 +1405,11 @@ button {
   color: #1F1F1F;
   outline: medium none; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Poppins", sans-serif;
   color: #1F1F1F; }
 
@@ -1514,6 +1520,20 @@ h3 {
 .gray-bg {
   background: #f5f5f5; }
 
+.activepage {
+  position: relative; }
+  .activepage a {
+    color: #28AE60 !important;
+    transition: all .5 ease-in-out; }
+  .activepage ::after {
+    content: "";
+    background-color: #28AE60;
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    animation: flash-width 2s infinite; }
+
 .overlay {
   position: relative;
   z-index: 0; }
@@ -1573,7 +1593,7 @@ h3 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5db2ff', endColorstr='#007db9e8', GradientType=1);
   /* IE6-9 */
   top: 0;
   left: 0;

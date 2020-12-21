@@ -1,20 +1,23 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
-  social_links as s_link,
-  contact_info,
-  sections_links,
+  header
 } from "../../data/index.json";
 
-export default function header() {
+export default function Header(props) {
+  const { activeMenu } = props;
   return (
     <header>
       <div className="header-area ">
-        <div id="sticky-header-top" className="header-top_area d-none d-lg-block">
+        <div
+          id="sticky-header-top"
+          className="header-top_area d-none d-lg-block"
+        >
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-md-6 ">
                 <div className="social_media_links">
-                  {s_link.map(({ name, link, icon }) => (
+                  {header.top.social_links.map(({ name, link, icon }) => (
                     <a key={name} href={link}>
                       <i className={icon}></i>
                     </a>
@@ -26,12 +29,12 @@ export default function header() {
                   <ul>
                     <li>
                       <a href="#">
-                        <i className="fa fa-envelope"></i> {contact_info.email}
+                        <i className="fa fa-envelope"></i> {header.top.email}
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="fa fa-phone"></i> {contact_info.phone}
+                        <i className="fa fa-phone"></i> {header.top.phone}
                       </a>
                     </li>
                   </ul>
@@ -47,7 +50,8 @@ export default function header() {
                 <div className="logo">
                   <a href="index.html">
                     <span>
-                      <i>R</i>ukundoeric
+                      <i>{header.main.name.substring(0, 1).toUpperCase()}</i>
+                      {header.main.name.substring(1, header.main.name.length)}
                     </span>
                   </a>
                 </div>
@@ -56,9 +60,18 @@ export default function header() {
                 <div className="main-menu  d-none d-lg-block">
                   <nav>
                     <ul id="navigation">
-                      {sections_links.map(({ name, link }) => (
-                        <li key={name}>
-                          <a href={link}>{name}</a>
+                      {header.main.sections_links.map(({ name, section }) => (
+                        <li
+                          key={name}
+                          className={activeMenu === name ? "activepage" : ""}
+                        >
+                          <a
+                            onClick={(e) => {
+                              props.goto(e, section);
+                            }}
+                          >
+                            {name}
+                          </a>
                         </li>
                       ))}
                     </ul>
@@ -67,7 +80,7 @@ export default function header() {
                 <div className="Appointment">
                   <div className="book_btn d-none d-lg-block">
                     <a className="popup-with-form" href="#test-form">
-                      Hire Me
+                      {header.main.action_text}
                     </a>
                   </div>
                 </div>

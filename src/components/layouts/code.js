@@ -1,7 +1,9 @@
 /* eslint-disable react/require-render-return */
 import React from "react";
 import Typewriter from "../shared/Typewriter";
-import { statements } from "../../data/index.json"
+import { code } from "../../data/index.json";
+
+const { statements } = code;
 
 class Code extends React.PureComponent {
   constructor() {
