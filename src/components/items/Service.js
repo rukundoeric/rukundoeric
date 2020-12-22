@@ -6,11 +6,6 @@ export default function Service({
 }) {
   return (
     <div
-      data-aos={animation.name}
-      data-aos-anchor-placement="bottom-bottom"
-      data-aos-easing={animation.easing}
-      data-aos-duration={animation.duration}
-      data-aos-delay={animation.delay}
       className="col-md-6 col-lg-4 d-flex align-self-stretch ftco-animate"
     >
       <div className="media block-6 services d-block text-center">

@@ -17,8 +17,9 @@ export default class Testmony extends Component {
       autoplay: true,
       autoplaySpeed: 2000,
       items: 1,
-      margin: 30,
+      margin: 100,
       stagePadding: 0,
+      autoplayHoverPause: true,
       nav: true,
       navText: [
         '<span class="icon-arrow-left">',

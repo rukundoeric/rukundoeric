@@ -35,25 +35,33 @@ export default function Contact(props) {
   );
 
   const handleSendEmail = () => {
-    changeSaveCaption('Sending...');
-    sendMail(email_value, editor_value).then((res) => {
-      if(res.responce === 'success') {
-        setResponce({
-          style: 'success',
-          message: 'Your message is received, I will reply directly to your email within 3 to 8 hours.'
-        })
-        setEditValue('');
-        setEmail('');
-        changeSaveCaption("Send");
-      } else {
-        setResponce({
-          style: "error",
-          message:
-            "Something went wrong! Please try again later!!!",
-        });
-        changeSaveCaption("Send");
-      }
-    });
+   if (editor_value.length > 0 && email_value.length > 0) {
+      changeSaveCaption("Sending...");
+      sendMail(email_value, editor_value).then((res) => {
+        if (res.responce === "success") {
+          setResponce({
+            style: "success",
+            message:
+              "Your message is received, I will reply directly to your email within 3 to 8 hours.",
+          });
+          setEditValue("");
+          setEmail("");
+          changeSaveCaption("Send");
+        } else {
+          setResponce({
+            style: "error",
+            message: "Something went wrong! Please try again later!!!",
+          });
+          changeSaveCaption("Send");
+        }
+      });
+   } else {
+      setResponce({
+        style: "error",
+        message: "Emain or message should not be empty!!!",
+      });
+      changeSaveCaption("Send");
+   }
   }
 
   return (
@@ -105,24 +113,26 @@ export default function Contact(props) {
                     <p className={responce.style}>{responce.message}</p>
                   )}
                   <div className="editor_container p-3">
-                    <input
-                      className="email my-2"
-                      required
-                      type="email"
-                      placeholder="Your Email"
-                      value={email_value}
-                      name="email"
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                    />
-                    <CustomEditor value={editor_value} onChange={onchange} />
-                    <button
-                      onClick={handleSendEmail}
-                      className="boxed-btn3 mt-5 mr-auto"
-                    >
-                      {save_caption_value}
-                    </button>
+                    <form>
+                      <input
+                        className="email my-2"
+                        required
+                        type="email"
+                        placeholder="Your Email"
+                        value={email_value}
+                        name="email"
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
+                      />
+                      <CustomEditor value={editor_value} onChange={onchange} />
+                      <button
+                        onClick={handleSendEmail}
+                        className="boxed-btn3 mt-5 mr-auto"
+                      >
+                        {save_caption_value}
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>

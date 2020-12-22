@@ -80,7 +80,7 @@
 
         span {
           font-weight: 700;
-          text-transform: uppercase;
+          text-transform: capitalize;
         }
 
         @media #{$mid_device} {
