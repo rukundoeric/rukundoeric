@@ -44,54 +44,6 @@
     //     padding: 0 10px;
     // }
 
-
-    .logo {
-     span {
-       color: white;
-       font-size: 20px;
-       font-weight: 800;
-       font-family: $font_d_1;
-       i {
-         padding: 8px 13px;
-         margin: 0 3px;
-         background-color: $btn_bg;
-         border-radius: 50%;
-       }
-     } 
-    }
-
-    .logo-img {
-      text-align: center;
-
-      @media #{$mobile_device} {
-        // padding-left: 20px;
-        text-align: left;
-      }
-
-      @media #{$tablet_device} {
-        // padding-left: 20px;
-        text-align: left;
-      }
-
-      @media #{$mid_device} {
-        // padding-left: 20px;
-        text-align: left;
-      }
-
-      img {
-        @media #{$mobile_device} {
-          // padding-left: 20px;
-          width: 70px;
-        }
-
-        @media #{$tablet_device} {
-          // padding-left: 20px;
-          width: 70px;
-        }
-
-      }
-    }
-
     .Appointment {
       @include flexbox();
       @include align-items(center);
@@ -107,9 +59,8 @@
         }
 
         a {
-
           i {
-            color: #E8E8E8;
+            color: #e8e8e8;
           }
         }
       }
@@ -120,7 +71,7 @@
             display: inline-block;
 
             a {
-              color: #A8A7A0;
+              color: #a8a7a0;
               margin: 0 10px;
               font-size: 15px;
 
@@ -144,7 +95,7 @@
         }
 
         a {
-          background: #28AE60;
+          background: #28ae60;
           padding: 12px 26px;
           font-size: 14px;
           font-weight: 400;
@@ -157,9 +108,9 @@
           }
 
           &:hover {
-            background: #28AE60;
+            background: #28ae60;
             color: #fff;
-            border: 1px solid #28AE60;
+            border: 1px solid #28ae60;
           }
         }
       }
@@ -211,7 +162,6 @@
 
               @media #{$tablet_device} {
                 display: none !important;
-                ;
               }
             }
 
@@ -240,7 +190,7 @@
             }
 
             &:hover {
-              color: #28AE60;
+              color: #28ae60;
             }
           }
 
@@ -251,11 +201,11 @@
             background: #fff;
             width: 200px;
             z-index: 2;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .02);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
             opacity: 0;
             visibility: hidden;
             text-align: left;
-            @include transition(.6s);
+            @include transition(0.6s);
 
             li {
               display: block;
@@ -263,7 +213,7 @@
               a {
                 padding: 10px 15px;
                 position: inherit;
-                @include transition(.3s);
+                @include transition(0.3s);
                 display: block;
                 color: #000;
 
@@ -297,8 +247,8 @@
     }
 
     .slicknav_icon-bar {
-        background-color: white !important;
-      }
+      background-color: white !important;
+    }
 
     &.sticky {
       // box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
@@ -318,6 +268,7 @@
       .slicknav_icon-bar {
         background-color: rgb(37, 37, 37) !important;
       }
+
       .mobile_menu {
         span {
           color: rgb(44, 44, 44) !important;
@@ -331,11 +282,13 @@
       }
 
       a {
-        color:  rgb(13, 15, 26) !important;
+        color: rgb(13, 15, 26) !important;
+
         span {
-          color:  rgb(13, 15, 26) !important;
+          color: rgb(13, 15, 26) !important;
+
           i {
-            color: white; 
+            color: white;
           }
         }
       }
@@ -372,7 +325,6 @@
         border-bottom: none !important;
       }
     }
-
   }
 
   .header-top_area {
@@ -390,37 +342,7 @@
         margin-right: 12px;
 
         &:hover {
-          color: #28AE60;
-        }
-      }
-    }
-
-    .short_contact_list {
-      text-align: right;
-
-      @media #{$mobile_device} {
-        text-align: center;
-      }
-
-      ul {
-        li {
-          display: inline-block;
-
-          a {
-            font-size: 13px;
-            color: #fff;
-            margin-left: 50px;
-
-            @media #{$mobile_device} {
-              margin-left: 0;
-              margin: 0 5px;
-            }
-
-            i {
-              color: #28AE60;
-              margin-right: 7px;
-            }
-          }
+          color: #28ae60;
         }
       }
     }
@@ -447,7 +369,7 @@
       }
 
       a {
-        color:  rgb(13, 15, 26) !important;
+        color: rgb(13, 15, 26) !important;
       }
 
       @media #{$mobile_device} {
@@ -482,28 +404,150 @@
 }
 
 .header_bottom_border {
-  border-bottom: 1px solid #4B4E50;
+  border-bottom: 1px solid #4b4e50;
   padding-bottom: 22px;
 
   &.white_border {
-    border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
 
     @media #{$mobile_device} {
       padding: 0;
       border-bottom: none;
-      ;
     }
 
     @media #{$mobile_device} {
       padding: 0;
       border-bottom: none !important;
-      ;
     }
   }
 
   @media #{$mobile_device} {
     padding: 0;
     border-bottom: none;
-    ;
+  }
+}
+
+.logo {
+  span {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: $font_d_1;
+
+    i {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3px;
+      background-color: $btn_bg;
+      border-radius: 50%;
+    }
+
+    &:after {
+      position: absolute;
+      top: 10px;
+      right: -5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      content: "";
+      background: $color-accent-1;
+      animation: pulse-a 2s infinite;
+    }
+  }
+}
+
+.logo-img {
+  text-align: center;
+
+  @media #{$mobile_device} {
+    // padding-left: 20px;
+    text-align: left;
+  }
+
+  @media #{$tablet_device} {
+    // padding-left: 20px;
+    text-align: left;
+  }
+
+  @media #{$mid_device} {
+    // padding-left: 20px;
+    text-align: left;
+  }
+
+  img {
+    @media #{$mobile_device} {
+      // padding-left: 20px;
+      width: 70px;
+    }
+
+    @media #{$tablet_device} {
+      // padding-left: 20px;
+      width: 70px;
+    }
+  }
+}
+
+.short_contact_list {
+  text-align: right;
+
+  @media #{$mobile_device} {
+    text-align: center;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 13px;
+        color: #fff;
+        margin-left: 50px;
+
+        @media #{$mobile_device} {
+          margin-left: 0;
+          margin: 0 5px;
+        }
+
+        i {
+          color: #28ae60;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.short_contact_list_in_contact {
+  // text-align: right;
+
+  @media #{$mobile_device} {
+    text-align: center;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 15px;
+        color: rgb(37, 37, 37);
+        font-weight: 700;
+        margin-right: 50px;
+
+        @media #{$mobile_device} {
+          margin-left: 0;
+          margin: 0 5px;
+        }
+
+        i {
+          color: #28ae60;
+          margin-right: 7px;
+        }
+      }
+    }
   }
 }

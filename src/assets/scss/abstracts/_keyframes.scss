@@ -222,34 +222,34 @@
   }
 }
 
-// @keyframes pulse-a {
-//   0% {
-//     -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
-//     box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
-//   }
-//   70% {
-//     -moz-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
-//     box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
-//   }
-//   100% {
-//     -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
-//     box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
-//   }
-// }
-// @keyframes pulse-b {
-//   0% {
-//     -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
-//     box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
-//   }
-//   70% {
-//     -moz-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
-//     box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
-//   }
-//   100% {
-//     -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
-//     box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
-//   }
-// }
+@keyframes pulse-a {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
+    box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
+    box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
+    box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
+  }
+}
+@keyframes pulse-b {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
+    box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
+    box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
+    box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
+  }
+}
 @keyframes flash-width {
   0% {
     width: 0px;
@@ -261,14 +261,14 @@
     width: 35px;
   }
 }
-// @-webkit-keyframes pulse {
-//   0% {
-//     -webkit-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
-//   }
-//   70% {
-//       -webkit-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
-//   }
-//   100% {
-//       -webkit-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
-//   }
-// }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba($color-accent-1, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 30px rgba($color-accent-1, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba($color-accent-1, 0);
+  }
+}

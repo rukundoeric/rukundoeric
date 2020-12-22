@@ -7,6 +7,8 @@ import Skills from  '../layouts/skills';
 import Experience from '../layouts/experience';
 import Projects from '../layouts/projects';
 import Recommendations from '../layouts/Testmony';
+import Contact from "../layouts/contact";
+import SIcon from "../shared/SIcon";
 import { $ } from '../../assets/js/plugins';
 
 export default function Home() {
@@ -63,6 +65,8 @@ export default function Home() {
       }
     });
 
+    $(".contact_me_action").animatedModal();
+
   }, []);
    
   const goTo = (e, d) => {
@@ -78,6 +82,16 @@ export default function Home() {
 
   return (
     <div>
+      <button
+        href="#animatedModal"
+        className="message_button contact_me_action"
+      >
+        <SIcon
+          elmId="contact-us-btn"
+          styleClass="icon4"
+          icon={"icon-envelope-open"}
+        />
+      </button>
       <Header goto={goTo} activeMenu={activeMenu} />
       <Slider />
       <About />
@@ -85,7 +99,8 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
-      <Recommendations />   
+      <Recommendations />
+      <Contact />
     </div>
   );
 }

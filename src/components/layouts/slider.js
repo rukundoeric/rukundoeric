@@ -16,10 +16,14 @@ export default function Slider() {
                   <h3>{banner.introduction}</h3>
                   <p dangerouslySetInnerHTML={{ __html: banner.description }} />
                   <div className="video_service_btn">
-                    {banner.actions.map(({ name, link, style }) => (
-                      <a href={link} className={style}>
+                    {banner.actions.map(({ name, link, style }, index) => (
+                      <button
+                        key={`key_` + index}
+                        href={link}
+                        className={style}
+                      >
                         {name}
-                      </a>
+                      </button>
                     ))}
                   </div>
                 </div>

@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import {
-  header
-} from "../../data/index.json";
+import { header } from "../../data/index.json";
 
 export default function Header(props) {
   const { activeMenu } = props;
@@ -49,14 +47,14 @@ export default function Header(props) {
               <div className="d-block">
                 <div className="logo">
                   <a href="index.html">
-                    <span>
+                    <span className="d-flex align-items-center">
                       <i>{header.main.name.substring(0, 1).toUpperCase()}</i>
                       {header.main.name.substring(1, header.main.name.length)}
                     </span>
                   </a>
                 </div>
               </div>
-              <div className="d-flex">
+              <div className="d-flex justify-content-between align-items-center">
                 <div className="main-menu  d-none d-lg-block">
                   <nav>
                     <ul id="navigation">
@@ -78,10 +76,16 @@ export default function Header(props) {
                   </nav>
                 </div>
                 <div className="Appointment">
-                  <div className="book_btn d-none d-lg-block">
-                    <a className="popup-with-form" href="#test-form">
-                      {header.main.action_text}
-                    </a>
+                  <div className="d-none d-lg-block">
+                    {header.main.actions.map(({ name, link, style }, index) => (
+                      <button
+                        key={`key_` + index}
+                        href={link}
+                        className={style}
+                      >
+                        {name}
+                      </button>
+                    ))}
                   </div>
                 </div>
               </div>

@@ -1,4 +1,28 @@
 {
+  "general": {
+    "social_links": [
+        {
+          "icon": "fa fa-linkedin",
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/in/rukundo-eric/"
+        },
+        {
+          "icon": "fa fa-twitter",
+          "name": "Twitter",
+          "link": "https://twitter.com/rukundoeric005"
+        },
+        {
+          "icon": "fa fa-facebook",
+          "name": "FaceBook",
+          "link": "https://web.facebook.com/gisa.prestein.9/"
+        },
+        {
+          "icon": "fa fa-github",
+          "name": "GitHub",
+          "link": "https://github.com/rukundoeric"
+        }
+      ]
+  },
   "header": {
     "top": {
       "social_links": [
@@ -65,7 +89,13 @@
           "section": "#recommendations-section"
         }
       ],
-      "action_text": "Hire Me"
+      "actions": [
+        {
+          "name": "Contact Me",
+          "link": "#animatedModal",
+          "style": "boxed-btn3 contact_me_action ml-2"
+        }
+      ]
     }
   },
   "banner": {
@@ -74,9 +104,9 @@
     "description": "Full-Stack <span>Software Developer</span> With 2+ Years <br /> Of Professional Experience.",
     "actions": [
       {
-        "name": "Hire Me",
-        "style": "boxed-btn3",
-        "link": "#contact"
+        "name": "Contact Me",
+        "style": "boxed-btn3 mr-3 contact_me_action",
+        "link": "#animatedModal"
       },
       {
         "name": "View My Projects",
@@ -391,5 +421,9 @@
         "return": "Kigali, Rwanda"
       }
     ]
+  },
+  "contacts": {
+    "name": "Rukundo <br /> Eric",
+    "description": " I'm here to help you bring your product to life, whether it's a Minimum Viable Product(MVP), UX/UI Services or API integration. please let me know if I can help,I will be grad to discuss the details with you."
   }
 }

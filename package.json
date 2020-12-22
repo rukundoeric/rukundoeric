@@ -2,16 +2,27 @@
   "name": "rukundo-eric",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.1"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@aeaton/react-prosemirror": "^0.22.1",
+    "@aeaton/react-prosemirror-config-default": "^0.12.0",
+    "@sendgrid/mail": "^7.4.0",
     "aos": "^2.3.4",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.17",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "react": "^17.0.1",
+    "react-async-image": "^3.0.0",
     "react-dom": "^17.0.1",
     "react-jquery-plugin": "^1.1.7",
+    "react-loader-spinner": "^3.1.14",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "regenerator-runtime": "^0.13.7",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

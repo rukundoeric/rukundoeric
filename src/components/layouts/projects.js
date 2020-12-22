@@ -2,32 +2,33 @@ import React, { useEffect } from "react";
 import line from "../../assets/imgs/lines.svg";
 import { $ } from "../../assets/js/plugins";
 import { projects } from "../../data/index.json";
+import Image from "react-async-image";
+import Loader from "react-loader-spinner";
 
 export default function Projects() {
-  
   useEffect(() => {
-     $("#projects").waitForImages(function () {
-       var $container = $(".portfolio_container");
-       $container.isotope({
-         filter: "*",
-       });
+    $("#projects").waitForImages(function () {
+      var $container = $(".portfolio_container");
+      $container.isotope({
+        filter: "*",
+      });
 
-       $(".portfolio_filter a").click(function () {
-         $(".portfolio_filter .active").removeClass("active");
-         $(this).addClass("active");
+      $(".portfolio_filter a").click(function () {
+        $(".portfolio_filter .active").removeClass("active");
+        $(this).addClass("active");
 
-         var selector = $(this).attr("data-filter");
-         $container.isotope({
-           filter: selector,
-           animationOptions: {
-             duration: 500,
-             animationEngine: "jquery",
-           },
-         });
-         return false;
-       });
-     });
-  }, [])
+        var selector = $(this).attr("data-filter");
+        $container.isotope({
+          filter: selector,
+          animationOptions: {
+            duration: 500,
+            animationEngine: "jquery",
+          },
+        });
+        return false;
+      });
+    });
+  }, []);
 
   return (
     <section className="projects_container py-5" id="projects-section">
@@ -81,10 +82,19 @@ export default function Projects() {
                         className={`col-md-6 col-sm-12 ${type}`}
                       >
                         <div className="portfolio_item">
-                          <img
+                          <Image
                             src={image_url}
-                            alt="project_image"
                             className="img-responsive"
+                            placeholder={
+                              <div className="img-responsive d-flex justify-content-center align-items-center">
+                                <Loader
+                                  type="ThreeDots"
+                                  color="#28AE60"
+                                  height={100}
+                                  width={100}
+                                />
+                              </div>
+                            }
                           />
                           <div className="portfolio_item_hover">
                             <div className="portfolio-border clearfix">
@@ -95,14 +105,14 @@ export default function Projects() {
                                 <div className="project_btns mt-5">
                                   <a
                                     href={source_code_url}
-                                    className="boxed-btn3-white-2 mx-1"
+                                    className="boxed-btn3-white-2 mx-1 my-2"
                                   >
                                     <i className="fa fa-github"></i>
                                     Source Code
                                   </a>
                                   <a
                                     href={live_demo_url}
-                                    className="boxed-btn3-white-2 mx-1"
+                                    className="boxed-btn3-white-2 mx-1 my-2"
                                   >
                                     <i className="fa fa-eye"></i>
                                     Live Demo

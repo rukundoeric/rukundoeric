@@ -2,6 +2,7 @@ body {
 	font-family: $font1;
 	font-weight: normal;
 	font-style: normal;
+	position: relative;
 	background: #fafafa;
 
 }
@@ -11,10 +12,27 @@ body {
 	@include transition(.3s);
 }
 
+
+button {
+	background-color: transparent;
+}
+
 a,
 .button {
 	@include transition(.3s);
 	cursor: pointer;
+}
+
+.success {
+	color: $btn_bg;
+	font-size: 15px;
+	text-align: center;
+}
+
+.error {
+	color: rgb(238, 56, 0);
+	font-size: 15px;
+	text-align: center;
 }
 
 a:focus,
@@ -399,6 +417,72 @@ h3 {
 			animation: 1.6s ease infinite wheel-left-right !important;
 		}
 	}
+}
+
+.icon7 {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	@include border-radius(50%);
+	@include transition(0.3s);
+
+	span {
+		line-height: 1.3;
+		@include flex-center;
+
+		i {
+			font-size: 20px;
+			color: $btn_bg;
+			animation: 1.6s ease infinite wheel-left-right !important;
+		}
+	}
+}
+
+.icon4 {
+	cursor: pointer;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  background: rgba(20, 83, 30, 0.103);
+  @include border-radius(50%);
+  animation: pulse-a 2s infinite;
+  @include flex-center;
+  span {
+    line-height: 1.3;
+    @include flex-center;
+    @include transition(0.3s);
+    @include flaticon_icon_m(20px, $color-accent-1);
+    i {
+      font-size: 25px;
+      color: $color-accent-1;
+    }
+  }
+}
+
+.message_button {
+	position: fixed;
+	z-index: 100;
+	bottom: 50px;
+	border: 0;
+	right: 30px;
+}
+
+.icon5 {
+  width: 50px;
+	height: 50px;
+	cursor: pointer;
+  margin-right: 10px;
+  background: rgba($color-accent-1, 0.3);
+  @include border-radius(50%);
+  @include transition(0.3s);
+  span {
+    line-height: 1.3;
+    @include flex-center;
+    i {
+      font-size: 20px;
+      color: $color-accent-1;
+    }
+  }
 }
 
 .section_header {

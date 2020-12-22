@@ -11,8 +11,9 @@ export default function About() {
             <h2 className="section_header">{about.title}</h2>
             <img src={line} className="img-lines" alt="lines"></img>
             <p className="px-lg-5 mt-4">{about.description}</p>
-            {about.actions.map(({ name, link, style }) => (
+            {about.actions.map(({ name, link, style }, index) => (
               <a
+                key={`key_` + index}
                 href={link}
                 className={style}
                 target="_blank"

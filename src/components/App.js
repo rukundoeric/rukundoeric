@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import dotenv from "dotenv";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import home from "./pages/home";
 import "../assets/css/bootstrap.min.css";
@@ -15,6 +16,8 @@ import "../assets/css/slicknav.css";
 import "../assets/css/style.css";
 import "../assets/js/plugins";
 import aos from "aos";
+
+dotenv.config();
 
 function App() {
   useEffect(() => {
