@@ -16,7 +16,7 @@ export default function Header(props) {
               <div className="col-xl-6 col-md-6 ">
                 <div className="social_media_links">
                   {header.top.social_links.map(({ name, link, icon }) => (
-                    <a key={name} href={link}>
+                    <a target="_blank" key={name} href={link}>
                       <i className={icon}></i>
                     </a>
                   ))}
@@ -46,7 +46,7 @@ export default function Header(props) {
             <div className="d-flex justify-content-between align-items-center">
               <div className="d-block">
                 <div className="logo">
-                  <a href="index.html">
+                  <a href="#home">
                     <span className="d-flex align-items-center">
                       <i>{header.main.name.substring(0, 1).toUpperCase()}</i>
                       {header.main.name.substring(1, header.main.name.length)}

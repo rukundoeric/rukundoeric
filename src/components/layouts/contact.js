@@ -78,7 +78,7 @@ export default function Contact(props) {
           <div className="container">
             <div className="portfolio-padding d-flex justify-content-center align-items-center">
               <div className="col-md-8 col-md-offset-2">
-                <div class="info-side">
+                <div className="info-side">
                   <div className="info-side-inner d-flex align-items-center">
                     <div className="logo">
                       <a

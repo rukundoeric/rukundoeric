@@ -93,7 +93,7 @@ export default function Home() {
         />
       </button>
       <Header goto={goTo} activeMenu={activeMenu} />
-      <Slider />
+      <Slider goto={goTo} activeMenu={activeMenu} />
       <About />
       <Expertise />
       <Skills />

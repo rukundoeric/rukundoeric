@@ -51,6 +51,7 @@ export default function Projects() {
                               href={link}
                               className={className}
                               data-filter={data_filter}
+                              target="_blank"
                             >
                               {name}
                             </a>
@@ -74,6 +75,7 @@ export default function Projects() {
                         image_url,
                         source_code_url,
                         live_demo_url,
+                        stacks,
                       },
                       index
                     ) => (
@@ -97,22 +99,39 @@ export default function Projects() {
                             }
                           />
                           <div className="portfolio_item_hover">
+                            <span className="d-i-web-icon">
+                              <i className="fa fa-info" />
+                            </span>
                             <div className="portfolio-border clearfix">
                               <div className="item_info">
                                 <div className="project_info">
                                   <span>{name}</span> <em>{description}</em>
                                 </div>
+                                <div className="stack_info mt-3">
+                                  <span>
+                                    <u>Stacks</u>
+                                    <div className="d-flex justify-content-center align-items-center mt-2">
+                                      {stacks.map(({name, icon }) => (
+                                        <i title={name} className={`${icon} mx-2`}></i>
+                                      ))}
+                                    </div>
+                                  </span>
+                                </div>
                                 <div className="project_btns mt-5">
                                   <a
                                     href={source_code_url}
-                                    className="boxed-btn3-white-2 mx-1 my-2"
+                                    className="boxed-btn3 mx-1 my-2"
+                                    rel="noreferrer"
+                                    target="_blank"
                                   >
                                     <i className="fa fa-github"></i>
                                     Source Code
                                   </a>
                                   <a
                                     href={live_demo_url}
-                                    className="boxed-btn3-white-2 mx-1 my-2"
+                                    className="boxed-btn3 mx-1 my-2"
+                                    rel="noreferrer"
+                                    target="_blank"
                                   >
                                     <i className="fa fa-eye"></i>
                                     Live Demo

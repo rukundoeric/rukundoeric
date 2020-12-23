@@ -22,8 +22,8 @@ export default class Testmony extends Component {
       autoplayHoverPause: true,
       nav: true,
       navText: [
-        '<span class="icon-arrow-left">',
-        '<span class="icon-arrow-right">',
+        '<span className="icon-arrow-left">',
+        '<span className="icon-arrow-right">',
       ],
       responsive: {
         0: {

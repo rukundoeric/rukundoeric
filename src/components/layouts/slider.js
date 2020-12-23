@@ -3,7 +3,7 @@ import Code from "./code";
 import SIcon from "../shared/SIcon";
 import { banner } from "../../data/index.json";
 
-export default function Slider() {
+export default function Slider(props) {
   return (
     <div id="home-section" className="slider_area">
       <div className="slider_active">
@@ -16,16 +16,29 @@ export default function Slider() {
                   <h3>{banner.introduction}</h3>
                   <p dangerouslySetInnerHTML={{ __html: banner.description }} />
                   <div className="video_service_btn">
-                    {banner.actions.map(({ name, link, style, target }, index) => (
-                      <a
-                        key={`key_` + index}
-                        href={link}
-                        className={style}
-                        target={target}
-                      >
-                        {name}
-                      </a>
-                    ))}
+                    {banner.actions.map(
+                      ({ name, link, style, target, section }, index) =>
+                        name === "Contact Me" ? (
+                          <a
+                            key={`key_` + index}
+                            href={link}
+                            className={style}
+                            target={target}
+                          >
+                            {name}
+                          </a>
+                        ) : (
+                          <button
+                            key={`key_` + index}
+                            className={style}
+                            onClick={(e) => {
+                              props.goto(e, section);
+                            }}
+                          >
+                            {name}
+                          </button>
+                        )
+                    )}
                   </div>
                 </div>
               </div>

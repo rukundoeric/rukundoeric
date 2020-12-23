@@ -1,27 +1,27 @@
 {
   "general": {
     "social_links": [
-        {
-          "icon": "fa fa-linkedin",
-          "name": "LinkedIn",
-          "link": "https://www.linkedin.com/in/rukundo-eric/"
-        },
-        {
-          "icon": "fa fa-twitter",
-          "name": "Twitter",
-          "link": "https://twitter.com/rukundoeric005"
-        },
-        {
-          "icon": "fa fa-facebook",
-          "name": "FaceBook",
-          "link": "https://web.facebook.com/gisa.prestein.9/"
-        },
-        {
-          "icon": "fa fa-github",
-          "name": "GitHub",
-          "link": "https://github.com/rukundoeric"
-        }
-      ]
+      {
+        "icon": "fa fa-linkedin",
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/rukundo-eric/"
+      },
+      {
+        "icon": "fa fa-twitter",
+        "name": "Twitter",
+        "link": "https://twitter.com/rukundoeric005"
+      },
+      {
+        "icon": "fa fa-facebook",
+        "name": "FaceBook",
+        "link": "https://web.facebook.com/gisa.prestein.9/"
+      },
+      {
+        "icon": "fa fa-github",
+        "name": "GitHub",
+        "link": "https://github.com/rukundoeric"
+      }
+    ]
   },
   "header": {
     "top": {
@@ -106,13 +106,16 @@
       {
         "name": "Contact Me",
         "style": "boxed-btn3 mr-3 contact_me_action",
-        "link": "#animatedModal"
+        "link": "#animatedModal",
+        "icon": "icon-envelope-open"
       },
       {
         "name": "View My Projects",
         "style": "boxed-btn3-white",
         "link": "https://github.com/rukundoeric",
-        "target": "_blank"
+        "icon": "fa fa-github",
+        "target": "_blank",
+        "section": "#projects-section"
       }
     ]
   },
@@ -300,7 +303,25 @@
         "description": "A Website for SourceDev Organization",
         "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491041/Portfolio/projects/source_dev_ahg2l5.jpg",
         "live_demo_url": "https://sourcedevfrontend.herokuapp.com/",
-        "source_code_url": "https://github.com/Source-Developers/sourcedev-frontend"
+        "source_code_url": "https://github.com/Source-Developers/sourcedev-frontend",
+        "stacks": [
+          {
+            "name": "Reactjs",
+            "icon": "devicon-react-original-wordmark"
+          },
+          {
+            "name": "Nodejs",
+            "icon": "devicon-nodejs-plain"
+          },
+          {
+            "name": "sass",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          }
+        ]
       },
       {
         "name": "Book-U",
@@ -308,7 +329,25 @@
         "description": "Simple Socia Media That help Users to Share Ideas",
         "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491069/Portfolio/projects/book_u_anspcg.jpg",
         "live_demo_url": "https://book-u-2020.herokuapp.com/",
-        "source_code_url": "https://github.com/rukundoeric/book-u"
+        "source_code_url": "https://github.com/rukundoeric/book-u",
+        "stacks": [
+          {
+            "name": "Ruby",
+            "icon": "devicon-ruby-plain-wordmark"
+          },
+          {
+            "name": "Rails",
+            "icon": "devicon-rails-plain-wordmark"
+          },
+          {
+            "name": "sass",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          }
+        ]
       },
       {
         "name": "Members-Only",
@@ -316,31 +355,25 @@
         "description": "Simple Socia Media That help Users to Share Ideas",
         "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491066/Portfolio/projects/members_only_o3rxr8.jpg",
         "live_demo_url": "https://members-only-2020.herokuapp.com/",
-        "source_code_url": "https://github.com/rukundoeric/members-only"
-      },
-      {
-        "name": "The Next Web",
-        "type": "template",
-        "description": "A structural clone of the Next Web home page.",
-        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491045/Portfolio/projects/tnw_pz0yam.jpg",
-        "live_demo_url": "https://rukundoeric.github.io/Building-with-Responsive-Design/index",
-        "source_code_url": "https://github.com/rukundoeric/Building-with-Responsive-Design"
-      },
-      {
-        "name": "GUMA GUMA",
-        "type": "business",
-        "description": "This is an online website for buying tickets for a flagship music competition concert called Primus Guma Guma Superstar.",
-        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491130/Portfolio/projects/conf_page_ox1qo8.png",
-        "live_demo_url": "https://rukundoeric.github.io/Conference-page/",
-        "source_code_url": "https://github.com/rukundoeric/Conference-page"
-      },
-      {
-        "name": "The Newsweek",
-        "type": "template",
-        "description": "A structural clone of Newsweek home page.",
-        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491036/Portfolio/projects/newsweek_khdnd2.jpg",
-        "live_demo_url": "http://binyamhailemeskel.me/Newsweek-Clone/index",
-        "source_code_url": "https://github.com/bini-i/Newsweek-Clone"
+        "source_code_url": "https://github.com/rukundoeric/members-only",
+        "stacks": [
+          {
+            "name": "Ruby",
+            "icon": "devicon-ruby-plain-wordmark"
+          },
+          {
+            "name": "Rails",
+            "icon": "devicon-rails-plain-wordmark"
+          },
+          {
+            "name": "sass",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          }
+        ]
       },
       {
         "name": "P-EVENTS",
@@ -348,7 +381,115 @@
         "description": "A Social Web App that help users to manage Events",
         "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491038/Portfolio/projects/private_events_tqbavj.jpg",
         "live_demo_url": "https://private-events-2020.herokuapp.com/",
-        "source_code_url": "https://github.com/rukundoeric/private-events"
+        "source_code_url": "https://github.com/rukundoeric/private-events",
+        "stacks": [
+          {
+            "name": "Ruby",
+            "icon": "devicon-ruby-plain-wordmark"
+          },
+          {
+            "name": "Rails",
+            "icon": "devicon-rails-plain-wordmark"
+          },
+          {
+            "name": "sass",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          }
+        ]
+      },
+      {
+        "name": "GUMA GUMA",
+        "type": "business",
+        "description": "This is an online website for buying tickets for a flagship music competition concert called Primus Guma Guma Superstar.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491130/Portfolio/projects/conf_page_ox1qo8.png",
+        "live_demo_url": "https://rukundoeric.github.io/Conference-page/",
+        "source_code_url": "https://github.com/rukundoeric/Conference-page",
+        "stacks": [
+          {
+            "name": "HTML",
+            "icon": "devicon-html5-plain-wordmark"
+          },
+          {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
+          },
+          {
+            "name": "SASS",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain"
+          }
+        ]
+      },
+      {
+        "name": "The Next Web",
+        "type": "template",
+        "description": "A structural clone of the Next Web home page.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491045/Portfolio/projects/tnw_pz0yam.jpg",
+        "live_demo_url": "https://rukundoeric.github.io/Building-with-Responsive-Design/index",
+        "source_code_url": "https://github.com/rukundoeric/Building-with-Responsive-Design",
+        "stacks": [
+          {
+            "name": "HTML",
+            "icon": "devicon-html5-plain-wordmark"
+          },
+          {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
+          },
+          {
+            "name": "SASS",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          },
+          {
+            "name": "JavaScript",
+            "icons": "devicon-javascript-plain"
+          }
+        ]
+      },
+      {
+        "name": "The Newsweek",
+        "type": "template",
+        "description": "A structural clone of Newsweek home page.",
+        "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491036/Portfolio/projects/newsweek_khdnd2.jpg",
+        "live_demo_url": "http://binyamhailemeskel.me/Newsweek-Clone/index",
+        "source_code_url": "https://github.com/bini-i/Newsweek-Clone",
+        "stacks": [
+          {
+            "name": "HTML",
+            "icon": "devicon-html5-plain-wordmark"
+          },
+          {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
+          },
+          {
+            "name": "SASS",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain"
+          }
+        ]
       },
       {
         "name": "The New York Times",
@@ -356,7 +497,29 @@
         "description": "A structural clone of the New York Times page.",
         "image_url": "https://res.cloudinary.com/newpoint/image/upload/v1608491036/Portfolio/projects/newyorktimes_ub9nkd.jpg",
         "live_demo_url": "https://gitcdn.xyz/cdn/rukundoeric/Positioning-and-Floating-Elements/5d71b895deed0c31e94517a83876509b7bd976f0/index.html",
-        "source_code_url": "https://github.com/rukundoeric/Positioning-and-Floating-Elements"
+        "source_code_url": "https://github.com/rukundoeric/Positioning-and-Floating-Elements",
+        "stacks": [
+          {
+            "name": "HTML",
+            "icon": "devicon-html5-plain-wordmark"
+          },
+          {
+            "name": "CSS",
+            "icon": "devicon-css3-plain"
+          },
+          {
+            "name": "SASS",
+            "icon": "devicon-sass-original"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "devicon-bootstrap-plain"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "devicon-javascript-plain"
+          }
+        ]
       }
     ]
   },
