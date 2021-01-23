@@ -1,6 +1,6 @@
 ### Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-Hi, I'm [Rukundo Eric](https://github.com/rukundoeric), a Full-Stack Web Developer with knowledge in HTML, CSS, Javascript, Ruby, Ruby Rails, Nodejs, React and Redux.
+Hi, I'm [Eric](https://rukundo-eric.herokuapp.com/), I’m an organized, detail-oriented, self-motivated, dedicated professional, and experienced developer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organization success.
 
 <br>
 <img src="https://github-readme-stats.vercel.app/api?username=rukundoeric&show_icons=true" alt="rukundoeric" />
